@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            padding: 5px;
+            background-color: aqua;
+        }
+        .main{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('C:\Users\HP\Desktop\ml\heart_pre\templates\nat-1.jpg');
+
+        }
+    </style>
+    <title>home</title>
+</head>
+<body>
+        <h1>this iis home</h1>
+
+        <form action="{% url 'result' %}" class="main">
+            Age:<input type="text"  required name="1" > <br>
+            Sex:<input type="text"  required name="2"> <br>
+            Cp:<input type="text"   required name="3"> <br>
+            Chol:<input type="text"  required name="4"> <br>
+            Fbs:<input type="text"  required name="5"> <br>
+            Restecg:<input type="text"  required name="6"> <br>
+            Thalach:<input type="text"   required name="7"> <br>
+            Exang:<input type="text"  required name="8"> <br>
+            Oldpeak:<input type="text"  required name="9"> <br>
+            Slope<input type="text"  required name="10"> <br>
+            Ca:<input type="text"  required name="11"> <br>
+            Thal<input type="text"  required name="12"> <br>
+            <input type="text"  required name="13"> <br>
+            
+            <input type="submit" name="" value="submit">
+
+        </form>
+</body>
+</html>
